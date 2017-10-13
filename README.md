@@ -113,17 +113,9 @@ async function init() {
 
 If you're developing and modifying the three.ar.js library itself, there are some helpful build tools for you.
 
-### Running Development Server
-
-Running `npm run dev` will start a local dev server from the project root at `http://0.0.0.0:8000` and rebuild and reload on changes made to `src/`. View the demos at [http://0.0.0.0:8000/examples](http://0.0.0.0:8000/examples), noting that a desktop browser won't have the AR-enhanced browser features.
-
-If your mobile device with the AR-enhanced browser and your development machine are on the same local network, you can access these demos from your mobile device via `http://$DEV_LOCAL_IP:8000/examples`.
-
-If the devices are not on the same network, or you're having firewall issues, you can use an [adb] command to proxy an Android device's requests to the development machine's host via `adb reverse tcp:8000 tcp:8000`.
-
 ### Building
 
-Run `npm run build` to create a new build in `./dist`. When sending pull requests, do **not** build your changes and allow maintainers to do so.
+Run `npm run build` to create a new build in `./dist`. When sending pull requests, do **not** build your changes and allow maintainers to do so. There are additional commands for building, like `npm run build-min` for building the minified file, and `npm run build-all` for building both.
 
 ### Linting
 
